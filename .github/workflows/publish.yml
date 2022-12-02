@@ -3,7 +3,7 @@ on:
     branches: main
 name: Quarto Publish
 jobs:
-  build-deploy:
+  mapreduce:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -15,3 +15,17 @@ jobs:
         with:
           target: quarto-pub
           QUARTO_PUB_AUTH_TOKEN: ${{ secrets.QUARTO_PUB_AUTH_TOKEN }}
+          path: map_reduce.qmd
+  facebook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: quarto-pub
+          QUARTO_PUB_AUTH_TOKEN: ${{ secrets.QUARTO_PUB_AUTH_TOKEN }}
+          path: facebook.qmd
