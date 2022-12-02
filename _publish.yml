@@ -1,0 +1,8 @@
+- source: facebook.qmd
+  quarto-pub:
+    - id: 7c95ecbc-bf82-408f-a68a-8290712d5cb4
+      url: 'https://quartopub.com/sites/sjerred/aos_facebook'
+- source: map_reduce.qmd
+  quarto-pub:
+    - id: bcb6ad99-86bf-4a10-9a46-bd7d94fff783
+      url: 'https://quartopub.com/sites/sjerred/aos_map_reduce'

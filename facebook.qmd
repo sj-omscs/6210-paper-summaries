@@ -1,0 +1,16 @@
+---
+title: "Summary of Finding a needle in Haystack: Facebook's photo storage"
+subtitle: ""
+date: "2022/02/12"
+author:
+- Jerred Shepherd
+crossref:
+  lof-title: "List of Figures"
+format:
+  pdf: # https://quarto.org/docs/output-formats/pdf-basics.html
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+# Introduction
